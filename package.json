@@ -1,0 +1,29 @@
+{
+  "name": "ext-example-ui-library",
+  "version": "1.0.0",
+  "main": "main.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@plesk/eslint-config": "0.0.2",
+    "@plesk/ui-library": "http://psabr.plesk.ru/br/development/ui-library/plesk-ui-library-0.0.47.tgz",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.1",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1",
+    "jest": "^20.0.4",
+    "react-test-renderer": "^15.6.1",
+    "webpack": "^3.5.5"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "@plesk/ui-library": "<rootDir>/node_modules/@plesk/ui-library/dist/plesk-ui-library.js"
+    }
+  },
+  "scripts": {
+    "prepare": "npm run build",
+    "build": "webpack",
+    "lint": "eslint frontend",
+    "pretest": "npm run lint",
+    "test": "jest"
+  }
+}

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 1999-2017. Plesk International GmbH. All rights reserved. -->
+<module>
+    <id>ext-example-ui-library</id>
+    <name>UI Library Demo</name>
+    <version>1.0.0</version>
+</module>
