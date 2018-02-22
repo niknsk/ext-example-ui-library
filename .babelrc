@@ -3,6 +3,7 @@
     "env"
   ],
   "plugins": [
+    "transform-object-assign",
     ["transform-react-jsx", { "pragma": "createElement" }]
   ]
 }
