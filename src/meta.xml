@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Copyright 1999-2017. Plesk International GmbH. All rights reserved. -->
+
 <module>
     <id>ext-example-ui-library</id>
-    <name>UI Library Demo</name>
+    <name>Extension example using Plesk UI Library</name>
     <version>1.0.0</version>
+    <category>example</category>
+    <version>1.0.0</version>
+    <release>{{RELEASE}}</release>
+    <vendor>Plesk</vendor>
+    <url>http://plesk.com</url>
+    <plesk_min_version>17.8.10</plesk_min_version>
+    <support_url>https://www.plesk.com/support/</support_url>
 </module>
