@@ -1,20 +1,21 @@
 <?php
 // Copyright 1999-2017. Plesk International GmbH. All rights reserved.
 
-class Modules_UiLibraryDemo_ContentInclude extends pm_Hook_ContentInclude
+/**
+ * Class Modules_Advisor_ContentInclude
+ */
+class Modules_ExtExampleUILibrary_ContentInclude extends pm_Hook_ContentInclude
 {
-    public function getBodyContent()
+    /**
+     * @inheritdoc
+     */
+    public function getHeadContent()
     {
-        $baseUrl = \pm_Context::getBaseUrl();
-        $props = json_encode([
-            'date' => date('Y-m-d H:i:s'),
-        ]);
+        $cssFiles = ['css/main.css'];
 
-        return <<<HTML
-<script>
-    require(["${baseUrl}main.js"], function (main) {
-        main(${props});
-    })</script>';
-HTML;
+        return
+            implode("\n", array_map(function ($file) {
+                return '<link rel="stylesheet" href="' . pm_Context::getBaseUrl() . $file . '">';
+            }, $cssFiles));
     }
 }

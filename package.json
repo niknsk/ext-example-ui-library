@@ -4,26 +4,34 @@
   "main": "main.js",
   "license": "MIT",
   "devDependencies": {
+    "@plesk/ui-library": "0.0.72",
     "@plesk/eslint-config": "0.0.2",
-    "@plesk/ui-library": "http://psabr.plesk.ru/br/development/ui-library/plesk-ui-library-0.0.47.tgz",
+    "autoprefixer": "^7.1.6",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.1",
     "babel-preset-env": "^1.6.0",
     "babel-preset-react": "^6.24.1",
-    "jest": "^20.0.4",
-    "react-test-renderer": "^15.6.1",
-    "webpack": "^3.5.5"
-  },
-  "jest": {
-    "moduleNameMapper": {
-      "@plesk/ui-library": "<rootDir>/node_modules/@plesk/ui-library/dist/plesk-ui-library.js"
-    }
+    "babel-plugin-transform-object-assign": "^6.8.0",
+    "css-loader": "^0.28.7",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "jest": "^21.2.1",
+    "less": "^2.7.3",
+    "less-loader": "^4.0.5",
+    "postcss-loader": "^2.0.8",
+    "rtlcss": "^2.2.1",
+    "style-loader": "^0.19.0",
+    "webpack": "^3.5.5",
+    "react-test-renderer": "^15.6.1"
   },
   "scripts": {
-    "prepare": "npm run build",
-    "build": "webpack",
-    "lint": "eslint frontend",
-    "pretest": "npm run lint",
-    "test": "jest"
+    "prepare": "yarn build",
+    "build": "webpack --config ./src/configs/build.config.js",
+    "lint": "eslint ./src/frontend",
+    "pretest": "yarn lint"
+  },
+  "dependencies": {
+    "react-router-dom": "^4.2.2",
+    "apisauce": "^0.14.2",
+    "promise.prototype.finally": "^3.1.0"
   }
 }
