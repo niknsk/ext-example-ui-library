@@ -11,7 +11,7 @@ class Home extends Component {
         this.state = {
             hideVersionLoading: true,
             data: {}
-        }
+        };
     }
 
     componentDidMount() {
