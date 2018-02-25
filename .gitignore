@@ -1,3 +1,9 @@
 /node_modules/
-/src/htdocs/
 /coverage/
+/src/htdocs/css/main.css
+/src/htdocs/js/main.js
+src/plib/meta.xml
+src/plib/vendor
+.idea
+composer.lock
+yarn.lock
