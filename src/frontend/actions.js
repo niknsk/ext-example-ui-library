@@ -110,6 +110,6 @@ export const loadSettings = () => {
         return api.get(LOAD_SETTINGS)
             .then(({data: settings}) => {
                 dispatch(receiveSettings(settings ? settings : {}));
-            })
+            });
     };
 };

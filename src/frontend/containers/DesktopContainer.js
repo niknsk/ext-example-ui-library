@@ -16,9 +16,9 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = dispatch => {
     return {
         loadSettings: () => {
-            dispatch(loadSettingsIfNeeded())
+            dispatch(loadSettingsIfNeeded());
         }
-    }
+    };
 };
 
 const DesktopContainer = withRouter(connect(
@@ -26,4 +26,4 @@ const DesktopContainer = withRouter(connect(
     mapDispatchToProps
 )(Desktop));
 
-export default DesktopContainer
+export default DesktopContainer;

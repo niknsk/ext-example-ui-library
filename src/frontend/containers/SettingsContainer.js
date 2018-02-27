@@ -15,12 +15,12 @@ const mapStateToProps = ({settings}) => {
 const mapDispatchToProps = dispatch => {
     return {
         loadSettings: () => {
-            dispatch(loadSettingsIfNeeded())
+            dispatch(loadSettingsIfNeeded());
         },
         saveSettings: (settings) => {
-            dispatch(saveSettings(settings))
+            dispatch(saveSettings(settings));
         },
-    }
+    };
 };
 
 const SettingsContainer = withRouter(connect(
@@ -28,4 +28,4 @@ const SettingsContainer = withRouter(connect(
     mapDispatchToProps
 )(Settings));
 
-export default SettingsContainer
+export default SettingsContainer;

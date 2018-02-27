@@ -61,4 +61,4 @@ Settings.defaultProps = {
     baseClassName: `${CLS_PREFIX}settings`
 };
 
-export default Settings
+export default Settings;
