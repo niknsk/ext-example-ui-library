@@ -2,7 +2,7 @@
 // Copyright 1999-2017. Plesk International GmbH. All rights reserved.
 
 /**
- * Class Modules_Advisor_ContentInclude
+ * Class Modules_ExtExampleUILibrary_ContentInclude
  */
 class Modules_ExtExampleUILibrary_ContentInclude extends pm_Hook_ContentInclude
 {

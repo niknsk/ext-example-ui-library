@@ -9,3 +9,7 @@ export const getBaseName = () => {
 export const getRouteUrl = (url) => {
     return `/${BASE_SCRIPT}${url}`;
 };
+
+export const getResourceUrl = function (url) {
+    return BASE_NAME + url;
+};

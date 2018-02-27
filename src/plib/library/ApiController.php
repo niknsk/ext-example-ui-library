@@ -34,6 +34,7 @@ class ApiController extends \pm_Controller_Action
      * Send exception
      *
      * @param \Exception $exception
+     * @throws \Zend_Controller_Response_Exception
      */
     protected function sendException(\Exception $exception)
     {

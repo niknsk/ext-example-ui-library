@@ -1,8 +1,8 @@
 // Copyright 1999-2017. Plesk International GmbH. All rights reserved.
 
-import { createElement, Component, React } from '@plesk/ui-library';
+import { createElement, Component, React, Translate } from '@plesk/ui-library';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import {getRouteUrl} from "../../helpers/url";
 import { CLS_PREFIX } from '../../constants';
 
@@ -12,10 +12,11 @@ class Header extends Component {
     render() {
         return (
             <header>
+                <h2><Translate content="extExampleUILibrary" /></h2>
                 <nav>
                     <ul className={`${this.props.baseClassName}__navbar`}>
-                        <li><Link to={getRouteUrl('/')}>Home</Link></li>
-                        <li><Link to={getRouteUrl('/about')}>About</Link></li>
+                        <li><NavLink to={getRouteUrl('/')}><Translate content="desktop" /></NavLink></li>
+                        <li><NavLink to={getRouteUrl('/settings')}><Translate content="settings" /></NavLink></li>
                     </ul>
                 </nav>
             </header>

@@ -1,16 +1,25 @@
 // Copyright 1999-2017. Plesk International GmbH. All rights reserved.
 
-import { createElement, Component, React } from '@plesk/ui-library';
+import { createElement, Component, LocaleProvider, React } from '@plesk/ui-library';
 import { BrowserRouter } from 'react-router-dom';
 import App from './App';
+import locale from '../l10n/en';
 import { getBaseName } from '../helpers/url';
+import { Provider } from 'react-redux';
+import configureStore from '../configureStore';
+
+const store = configureStore();
 
 class Root extends Component {
     render() {
         return (
-            <BrowserRouter basename={getBaseName()}>
-                <App />
-            </BrowserRouter>
+            <Provider store={store}>
+                <LocaleProvider messages={locale}>
+                    <BrowserRouter basename={getBaseName()}>
+                        <App />
+                    </BrowserRouter>
+                </LocaleProvider>
+            </Provider>
         );
     }
 }
