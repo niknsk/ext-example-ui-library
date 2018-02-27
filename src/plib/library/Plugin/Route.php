@@ -6,7 +6,7 @@ namespace PleskExt\ExtExampleUILibrary\Plugin;
 /**
  * Class Route
  *
- * @package PleskExt\Advisor\Plugin
+ * @package PleskExt\ExtExampleUILibrary\Plugin
  */
 class Route extends \Zend_Controller_Plugin_Abstract
 {
