@@ -49,8 +49,7 @@ export const saveSettings = (settings = {}) => {
         dispatch(updateSettings(settings));
 
         const data = new FormData();
-
-        data.append('backgroundImage', settings.backgroundImage);
+        data.append('settings', JSON.stringify(settings));
 
         return api.post(SAVE_SETTINGS, data);
     };
@@ -110,7 +109,7 @@ export const loadSettings = () => {
 
         return api.get(LOAD_SETTINGS)
             .then(({data: settings}) => {
-                dispatch(receiveSettings(settings));
+                dispatch(receiveSettings(settings ? settings : {}));
             })
     };
 };

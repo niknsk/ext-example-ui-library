@@ -2,10 +2,11 @@
 
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
-import {loadSettingsIfNeeded, saveSettings} from '../actions';
-import Settings from '../components/Settings/Settings';
+import { loadSettingsIfNeeded } from '../actions';
+import Desktop from '../components/Desktop/Desktop';
 
-const mapStateToProps = ({settings}) => {
+const mapStateToProps = (state) => {
+    const { settings } = state;
     return {
         settings: settings.data,
         isLoading: settings.isFetching
@@ -16,16 +17,13 @@ const mapDispatchToProps = dispatch => {
     return {
         loadSettings: () => {
             dispatch(loadSettingsIfNeeded())
-        },
-        saveSettings: (settings) => {
-            dispatch(saveSettings(settings))
-        },
+        }
     }
 };
 
-const SettingsContainer = withRouter(connect(
+const DesktopContainer = withRouter(connect(
     mapStateToProps,
     mapDispatchToProps
-)(Settings));
+)(Desktop));
 
-export default SettingsContainer
+export default DesktopContainer
