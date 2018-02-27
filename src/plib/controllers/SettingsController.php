@@ -12,16 +12,16 @@ class SettingsController extends ApiController
      */
     public function saveAction()
     {
-        $backgroundImage = $this->_request->getParam('backgroundImage');
+        $settings= $this->_request->getParam('settings');
         
-        \pm_Settings::set('backgroundImage', $backgroundImage);
+        \pm_Settings::set('settings', $settings);
     }
 
     public function loadAction()
     {
-        $data = ['backgroundImage' => \pm_Settings::get('backgroundImage')];
+        $settings = json_decode(\pm_Settings::get('settings'));
 
-        $this->sendJsonResponse($data);
+        $this->sendJsonResponse($settings);
     }
 
     public function indexAction()

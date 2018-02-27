@@ -2,8 +2,8 @@
 
 export default {
     extExampleUILibrary: 'Extension example using Plesk UI Library',
-    desctop: 'Desctop',
+    desktop: 'Desktop',
     settings: 'Settings',
-    desctopBackgroundImage: 'Desctop background image',
-    changeDesctopBackgroundImageMessage: 'To change the desktop background image please go to the page Settings',
+    desktopBackgroundImage: 'Desktop background image',
+    changeDesktopBackgroundImageMessage: 'To change the desktop background image please go to the page Settings'
 };

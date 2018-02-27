@@ -3,17 +3,17 @@
 import { createElement, Component, React } from '@plesk/ui-library';
 import { Route, Switch } from 'react-router-dom';
 import NotFound from './NotFound';
-import { getRouteUrl } from '../helpers/url';
-import DesctopContainer from "../containers/DesctopContainer";
+import DesktopContainer from "../containers/DesktopContainer";
 import SettingsContainer from "../containers/SettingsContainer";
+import { getRouteUrl } from '../helpers/url';
 
 class Main extends Component {
     render() {
         return (
             <main>
                 <Switch>
-                    <Route exact path="/" component={DesctopContainer}/>
-                    <Route exact path={getRouteUrl('/')} component={DesctopContainer}/>
+                    <Route exact path="/" component={DesktopContainer}/>
+                    <Route exact path={getRouteUrl('/')} component={DesktopContainer}/>
                     <Route path={getRouteUrl('/settings')} component={SettingsContainer}/>
                     <Route path="*" component={NotFound} />
                 </Switch>

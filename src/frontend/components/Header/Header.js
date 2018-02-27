@@ -15,7 +15,7 @@ class Header extends Component {
                 <h2><Translate content="extExampleUILibrary" /></h2>
                 <nav>
                     <ul className={`${this.props.baseClassName}__navbar`}>
-                        <li><NavLink to={getRouteUrl('/')}><Translate content="desctop" /></NavLink></li>
+                        <li><NavLink to={getRouteUrl('/')}><Translate content="desktop" /></NavLink></li>
                         <li><NavLink to={getRouteUrl('/settings')}><Translate content="settings" /></NavLink></li>
                     </ul>
                 </nav>
