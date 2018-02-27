@@ -3,7 +3,7 @@
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 import { loadSettingsIfNeeded } from '../actions';
-import Desctop from '../components/Desctop/Desctop';
+import Desktop from '../components/Desktop/Desktop';
 
 const mapStateToProps = (state) => {
     const { settings } = state;
@@ -21,9 +21,9 @@ const mapDispatchToProps = dispatch => {
     }
 };
 
-const DesctopContainer = withRouter(connect(
+const DesktopContainer = withRouter(connect(
     mapStateToProps,
     mapDispatchToProps
-)(Desctop));
+)(Desktop));
 
-export default DesctopContainer
+export default DesktopContainer
