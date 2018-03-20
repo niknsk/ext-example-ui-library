@@ -9,6 +9,6 @@
     <release>{{RELEASE}}</release>
     <vendor>Plesk</vendor>
     <url>http://plesk.com</url>
-    <plesk_min_version>17.8.10</plesk_min_version>
+    <plesk_min_version>17.8.11</plesk_min_version>
     <support_url>https://www.plesk.com/support/</support_url>
 </module>
