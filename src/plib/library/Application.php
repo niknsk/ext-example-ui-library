@@ -1,14 +1,14 @@
 <?php
 // Copyright 1999-2017. Plesk International GmbH. All rights reserved.
 
-namespace PleskExt\ExtExampleUILibrary;
+namespace PleskExt\ExampleUiLibrary;
 
-use PleskExt\ExtExampleUILibrary\Plugin\Route;
+use PleskExt\ExampleUiLibrary\Plugin\Route;
 
 /**
  * Class Application
  *
- * @package PleskExt\ExtExampleUILibrary
+ * @package PleskExt\ExampleUiLibrary
  */
 class Application extends \pm_Application
 {

@@ -1,7 +1,7 @@
 <?php
 // Copyright 1999-2017. Plesk International GmbH. All rights reserved.
 
-use PleskExt\ExtExampleUILibrary\ApiController;
+use PleskExt\ExampleUiLibrary\ApiController;
 
 class SettingsController extends ApiController
 {

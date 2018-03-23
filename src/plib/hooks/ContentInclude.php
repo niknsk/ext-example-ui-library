@@ -2,9 +2,9 @@
 // Copyright 1999-2017. Plesk International GmbH. All rights reserved.
 
 /**
- * Class Modules_ExtExampleUILibrary_ContentInclude
+ * Class Modules_ExampleUiLibrary_ContentInclude
  */
-class Modules_ExtExampleUILibrary_ContentInclude extends pm_Hook_ContentInclude
+class Modules_ExampleUiLibrary_ContentInclude extends pm_Hook_ContentInclude
 {
     /**
      * @inheritdoc
