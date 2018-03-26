@@ -1,7 +1,7 @@
 <?php
 // Copyright 1999-2017. Plesk International GmbH. All rights reserved.
 
-namespace PleskExt\ExtExampleUILibrary;
+namespace PleskExt\ExampleUiLibrary;
 
 /**
  * Class ApiController

@@ -14,12 +14,12 @@
 
   "autoload": {
     "psr-4": {
-      "PleskExt\\ExtExampleUILibrary\\": "modules/ext-example-ui-library/library/"
+      "PleskExt\\ExampleUiLibrary\\": "modules/example-ui-library/library/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "PleskExt\\ExtExampleUILibrary\\": "src/plib/library"
+      "PleskExt\\ExampleUiLibrary\\": "src/plib/library"
     }
   }
 }

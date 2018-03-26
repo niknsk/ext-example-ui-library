@@ -2,11 +2,11 @@
 <!-- Copyright 1999-2017. Plesk International GmbH. All rights reserved. -->
 
 <module>
-    <id>ext-example-ui-library</id>
+    <id>example-ui-library</id>
     <name>Extension example using Plesk UI Library</name>
     <version>1.0.0</version>
     <category>example</category>
-    <release>{{RELEASE}}</release>
+    <release>3</release>
     <vendor>Plesk</vendor>
     <url>http://plesk.com</url>
     <plesk_min_version>17.8.11</plesk_min_version>
