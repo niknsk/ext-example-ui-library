@@ -1,6 +1,8 @@
 {
   "presets": [
-    "env"
+    "env",
+    "stage-2",
+    "react"
   ],
   "plugins": [
     "transform-object-assign",
